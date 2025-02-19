@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "1) docker pull nome-da-imagem: baixa uma certa imagem, como o git pull\r 2) docker images: carrega as imagens do Docker que estão no sistema\r 3) docker run nome-da-imagem: executa a imagem\r    -> OBS: algumas imagens impedem o acesso ao terminal quando executadas. Para transitar entre esses locais, é interessante utilizar a flag -d (detached), ficando docker run -d redis\r 4) docker ps: para visualizar as imagens em execução no momento \r    -> flag -a: para mostrar as imagens que já foram executadas em algum momento\r 5) docker stop id-da-imagem\r 6) docker start id-da-imagem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch --env-file=.env src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@fastify/swagger": "^9.4.2",
+    "@fastify/swagger-ui": "^5.2.2",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
