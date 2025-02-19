@@ -1,0 +1,19 @@
+# Arquivo de instruções que indica quais dependências nosso projeto tem
+
+services:
+  service-pg:
+    image: bitnami/postgresql
+    ports:
+      - '5432:5432' 
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=connect
+
+  service-redis:
+    image: bitnami/redis
+    ports:
+      - '6379:6379'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+      

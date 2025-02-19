@@ -23,6 +23,10 @@ npm i @fastify/cors: define quais URLs podem acessar o back (medida de seguranç
 npm i zod: validação e serialização de dados (serialização é transformar os dados do back-end que serão enviados ao front-end)
 npm i fastify-type-provider-zod: integra o zod com o fastify
 npm i @fastify/swagger @fastify/swagger-ui: o swagger gera a documentação e o s-ui gera uma interface que nos permite navegar pelas rotas da aplicação
+npm i @biomejs/biome -D
+
+ATALHO DO VS CODE
+Ctrl + shift + P: pesquisar coisas como o arquivo de configuração do VS Code
 
 "Quando nós criamos uma API, os tipos de dados mais comuns são: 
 body (corpo da requisição, presente somente quando há método POST e PUT), 
@@ -37,3 +41,17 @@ Não é possível apenas testar de forma simples algumas requisições (como pos
 
 ### Variáveis de ambiente ###
 Em algum momento da aplicação, é necessário definir variáveis de ambiente, que mudam o valor conforme a etapa/ambiente de desenvolvimento (se está em produção ou em desenvolvimento por exemplo   )
+
+### AULA 02  INÍCIO DO PROJETO ###
+COMANDOS DA AULA
+docker compose up -d
+npm i ioredis
+npm i postgres drizzle-orm
+npm i drizzle-kit -D
+npx drizzle-kit generate
+npx drizzle-kit migrate
+
+
+
+
+

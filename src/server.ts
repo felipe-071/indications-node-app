@@ -1,9 +1,9 @@
 import { fastify } from 'fastify'
 import { fastifyCors } from '@fastify/cors'
 import { 
+    type ZodTypeProvider,
     validatorCompiler, 
-    serializerCompiler, 
-    ZodTypeProvider,
+    serializerCompiler,
     jsonSchemaTransform, } from 'fastify-type-provider-zod'
 import { fastifySwagger } from '@fastify/swagger'
 import { fastifySwaggerUi } from '@fastify/swagger-ui'
